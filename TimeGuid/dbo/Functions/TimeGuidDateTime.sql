@@ -1,0 +1,8 @@
+﻿CREATE FUNCTION [dbo].[TimeGuidDateTime](
+	@TimeGuid UNIQUEIDENTIFIER
+)
+RETURNS DATETIME2(3) 
+WITH EXECUTE AS CALLER
+AS 
+EXTERNAL NAME [TimeGuid].[UserDefinedFunctions].[TimeGuidDateTime];
+GO

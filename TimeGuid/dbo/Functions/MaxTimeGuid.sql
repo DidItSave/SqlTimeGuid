@@ -1,0 +1,8 @@
+﻿CREATE FUNCTION [dbo].[MaxTimeGuid](
+	@DateTime NVARCHAR(30)
+)
+RETURNS UNIQUEIDENTIFIER
+WITH EXECUTE AS CALLER
+AS 
+EXTERNAL NAME [TimeGuid].[UserDefinedFunctions].[MaxTimeGuid];
+GO
